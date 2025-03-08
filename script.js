@@ -1191,7 +1191,7 @@ document.getElementById('newsletterForm').addEventListener('submit', function(e)
     }
     
     // Informasi Telegram yang benar
-    const botToken = '8110849181:AAGRC4QSMVayvU50Jd6f0b9YOJAdaSt2__E';
+    const botToken = '';
     const chatId = '-4676919972';
     
     // Encode message untuk URL
