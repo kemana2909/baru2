@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garden House Serpong</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fancybox CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+</head>
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+        <!-- Logo and brand name container -->
+        <div class="brand-container">
+            <img src="img/logo-gsh.png" alt="Garden House Serpong Logo" class="brand-logo">
+            <a href="#" class="logo">Garden House Serpong</a>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#tipe-rumah">Tipe Rumah</a></li>
+            <li><a href="#">Galeri</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+        
+        <div class="mobile-controls"></div>
+        <div class="social-icons">
+            <a href="https://wa.me/6285601081492" target="_blank" class="social-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.4054 3.5947C18.1607 1.35 15.1714 0.0947 12.0054 0.0947C5.4375 0.0947 0.0964 5.43582 0.0964 12.0037C0.0964 14.1375 0.6911 16.2144 1.8161 18.0054L0 24.0947L6.2196 22.3108C7.9446 23.3197 9.95357 23.8537 12.0054 23.8537H12.0054C18.5732 23.8537 24 18.5126 24 11.9447C24 8.77875 22.65 5.83945 20.4054 3.5947ZM12.0054 21.8572C10.2268 21.8572 8.4857 21.3465 6.9804 20.3947L6.6161 20.1715L2.8607 21.1983L3.9054 17.5322L3.6643 17.1501C2.6036 15.5876 2.0357 13.8269 2.0357 12.0037C2.0357 6.5358 6.5375 2.03397 12.0054 2.03397C14.6446 2.03397 17.1322 3.10612 19.0179 4.99182C20.9036 6.87752 22 9.36517 22 12.0044C22 17.4722 17.4732 21.8572 12.0054 21.8572ZM17.4554 14.5197C17.1643 14.3733 15.6946 13.6483 15.4214 13.5608C15.1482 13.4733 14.9429 13.4197 14.7375 13.7108C14.5322 14.0019 13.9643 14.6679 13.7768 14.8733C13.5893 15.0786 13.4018 15.1054 13.1107 14.959C12.8196 14.8126 11.85 14.484 10.7036 13.4733C9.8036 12.684 9.2 11.7144 9.0125 11.4233C8.825 11.1322 8.9929 10.959 9.1536 10.7983C9.3 10.6518 9.4786 10.4126 9.6393 10.2251C9.8 10.0376 9.8536 9.89397 9.9411 9.68862C10.0286 9.48327 9.975 9.29577 9.9143 9.14934C9.8536 9.0029 9.2536 7.53327 8.9893 6.95112C8.7357 6.39325 8.4751 6.47576 8.2771 6.47576C8.0893 6.47576 7.8839 6.45004 7.6786 6.45004C7.4732 6.45004 7.1464 6.51075 6.8732 6.80182C6.6 7.09289 5.8214 7.81787 5.8214 9.2875C5.8214 10.7572 6.8732 12.168 7.0339 12.3733C7.1946 12.5786 9.175 15.634 12.2107 16.9036C12.8554 17.1768 13.3571 17.3375 13.75 17.4608C14.4054 17.6572 15 17.6304 15.4679 17.5697C15.9893 17.5019 17.1821 16.8572 17.4464 16.1858C17.7107 15.5144 17.7107 14.9322 17.65 14.8215C17.5893 14.7108 17.384 14.6501 17.0929 14.5037L17.4554 14.5197Z" fill="white"/>
+                </svg>
+            </a>
+            <a href="https://instagram.com" class="social-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2.163C15.204 2.163 15.584 2.175 16.85 2.233C20.102 2.381 21.621 3.924 21.769 7.152C21.827 8.417 21.838 8.797 21.838 12.001C21.838 15.206 21.826 15.585 21.769 16.85C21.62 20.075 20.105 21.621 16.85 21.769C15.584 21.827 15.206 21.839 12 21.839C8.796 21.839 8.416 21.827 7.151 21.769C3.891 21.62 2.38 20.07 2.232 16.849C2.174 15.584 2.162 15.205 2.162 12C2.162 8.796 2.175 8.417 2.232 7.151C2.381 3.924 3.896 2.38 7.151 2.232C8.417 2.175 8.796 2.163 12 2.163ZM12 0C8.741 0 8.333 0.014 7.053 0.072C2.695 0.272 0.273 2.69 0.073 7.052C0.014 8.333 0 8.741 0 12C0 15.259 0.014 15.668 0.072 16.948C0.272 21.306 2.69 23.728 7.052 23.928C8.333 23.986 8.741 24 12 24C15.259 24 15.668 23.986 16.948 23.928C21.302 23.728 23.73 21.31 23.927 16.948C23.986 15.668 24 15.259 24 12C24 8.741 23.986 8.333 23.928 7.053C23.732 2.699 21.311 0.273 16.949 0.073C15.668 0.014 15.259 0 12 0ZM12 5.838C8.597 5.838 5.838 8.597 5.838 12C5.838 15.403 8.597 18.163 12 18.163C15.403 18.163 18.162 15.404 18.162 12C18.162 8.597 15.403 5.838 12 5.838ZM12 16C9.791 16 8 14.21 8 12C8 9.791 9.791 8 12 8C14.209 8 16 9.791 16 12C16 14.21 14.209 16 12 16ZM18.406 4.155C17.61 4.155 16.965 4.8 16.965 5.595C16.965 6.39 17.61 7.035 18.406 7.035C19.201 7.035 19.845 6.39 19.845 5.595C19.845 4.8 19.201 4.155 18.406 4.155Z" fill="white"/>
+                </svg>
+            </a>
+        </div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+   <!-- Hero Section start-->
+<section class="hero">
+    <!-- Konten di sebelah kiri (desktop) atau di atas/bawah (mobile) -->
+    <div class="hero-content">
+        <!-- 1. Title -->
+        <div class="hero-title-container">
+            <h1 class="hero-title">Hunian Nyaman dan Modern di Tengah Kota</h1>
+        </div>
+        
+        <!-- 2. Subtitle -->
+        <div class="hero-subtitle-container">
+            <p class="hero-subtitle">Nikmati kenyamanan tinggal di hunian dengan desain modern yang elegan, dilengkapi fasilitas lengkap untuk menunjang gaya hidup Anda. Berlokasi strategis di pusat kota, memberikan kemudahan akses ke berbagai tempat penting, mulai dari pusat perbelanjaan, perkantoran, hingga transportasi umum. Hunian ideal bagi Anda yang menginginkan keseimbangan antara kenyamanan, kemudahan, dan gaya hidup urban.</p>
+        </div>
+        
+        <!-- 4. Questions and Offers (pada mobile) -->
+        <div class="hero-questions-container">
+            <p class="hero-questions">Butuh informasi tentang rumah?</p>
+            <p class="hero-offers">Isi Formulir di bawah dan Dapatkan penawaran eksklusif dari kami!</p>
+        </div>
+        
+        <!-- 5. Form -->
+        <div class="contact-form-container">
+            <form class="contact-form" id="whatsappForm">
+                <input type="text" class="contact-input" id="userMessage" placeholder="Masukkan Pertanyaan Anda">
+                <button type="submit" class="contact-button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- 3. Gambar di sebelah kanan (desktop) atau di tengah (mobile) -->
+    <div class="hero-slider">
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <img src="img/rumah4-desktop.webp" alt="Garden House 1">
+                </div>
+                <div class="slide">
+                    <img src="img/gerbang-desktop.webp" alt="Garden House 2">
+                </div>
+                <div class="slide">
+                    <img src="img/taman-desktop.webp" alt="Garden House 3">
+                </div>
+            </div>
+            <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Background Effects -->
+    <div class="hero-background-effects">
+        <div class="hero-circle circle-1"></div>
+        <div class="hero-circle circle-2"></div>
+        <div class="hero-circle circle-3"></div>
+    </div>
+</section>
+<!-- Hero Section end-->
+
+<!-- Kenapa Memilih Kami Section Start -->
+<section class="why-choose-us">
+    <div class="section-header">
+        <span class="section-badge">KEUNGGULAN</span>
+        <h2 class="section-title">Kenapa Memilih Garden House Serpong</h2>
+        <p class="section-subtitle">Garden House Serpong menawarkan berbagai keunggulan untuk memenuhi kebutuhan hunian ideal Anda.</p>
+    </div>
+
+    <div class="features-container">
+        <!-- Feature Card 1 -->
+        <div class="feature-card">
+            <div class="feature-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 21.5L3 21.5L10 3.5L14 3.5L21 21.5Z" fill="#292357"/>
+                    <path d="M12 8L12 10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M12 13L12 15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M12 18L12 20" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <h3 class="feature-title">Lokasi Strategis</h3>
+            <p class="feature-description">Akses mudah ke berbagai fasilitas penting seperti sekolah, rumah sakit, pusat perbelanjaan, dan jalan tol.</p>
+        </div>
+
+        <!-- Feature Card 2 -->
+        <div class="feature-card">
+            <div class="feature-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 8H17V6C17 3.24 14.76 1 12 1C9.24 1 7 3.24 7 6V8H6C4.9 8 4 8.9 4 10V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V10C20 8.9 19.1 8 18 8ZM12 17C10.9 17 10 16.1 10 15C10 13.9 10.9 13 12 13C13.1 13 14 13.9 14 15C14 16.1 13.1 17 12 17ZM15 8H9V6C9 4.34 10.34 3 12 3C13.66 3 15 4.34 15 6V8Z" fill="#292357"/>
+                </svg>
+            </div>
+            <h3 class="feature-title">Keamanan 24 Jam</h3>
+            <p class="feature-description">Sistem keamanan terpadu dengan penjagaan 24 jam, CCTV, dan akses kartu untuk ketenangan pikiran Anda.</p>
+        </div>
+
+        <!-- Feature Card 3 -->
+        <div class="feature-card">
+            <div class="feature-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9 22V12H15V22" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <h3 class="feature-title">Fasilitas Lengkap</h3>
+            <p class="feature-description">Nikmati fasilitas modern seperti taman, kolam renang, gym, dan area bermain anak untuk gaya hidup yang nyaman.</p>
+        </div>
+
+        <!-- Feature Card 4 -->
+        <div class="feature-card">
+            <div class="feature-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 22C12 22 20 18 20 12V5L12 2L4 5V12C4 18 12 22 12 22Z" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <h3 class="feature-title">Legalitas Terjamin</h3>
+            <p class="feature-description">Kami beroperasi dengan izin resmi dan mengikuti regulasi yang berlaku, memastikan setiap layanan yang kami tawarkan aman, terpercaya, dan sesuai dengan standar hukum. Keamanan dan kepuasan pelanggan adalah prioritas utama kami.</p>
+        </div>
+    </div>
+</section>
+<!-- Kenapa Memilih Kami Section End -->
+
+<!-- Section Tipe Rumah Start -->
+<section class="house-types" id="tipe-rumah">
+    <div class="section-header">
+        <span class="section-badge">TIPE RUMAH</span>
+        <h2 class="section-title">Pilihan Tipe Rumah Eksklusif</h2>
+        <p class="section-subtitle">Berbagai pilihan tipe rumah modern yang dapat disesuaikan dengan kebutuhan dan gaya hidup Anda.</p>
+    </div>
+
+    <div class="house-types-slider-container">
+        <div class="house-types-slider">
+            <!-- Tipe Rumah 1 -->
+            <div class="house-type-card">
+                <div class="house-image-container">
+                    <img src="img/rumah1-desktop.webp" alt="Tipe Rumah Lotus" class="house-image">
+                    <div class="house-badge">Bestseller</div>
+                </div>
+                <div class="house-info">
+                    <h3 class="house-name">Tipe Lotus</h3>
+                    <div class="house-specs">
+                        <div class="spec">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 22V12H15V22" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>120 m²</span>
+                        </div>
+                        <div class="spec">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 22V8L12 2L21 8V22" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 14H15" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 18H15" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>2 Lantai</span>
+                        </div>
+                        <div class="spec">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V21" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 21H18" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 13H18" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 13V21" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 8C12.8284 8 13.5 7.32843 13.5 6.5C13.5 5.67157 12.8284 5 12 5C11.1716 5 10.5 5.67157 10.5 6.5C10.5 7.32843 11.1716 8 12 8Z" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>3 KT</span>
+                        </div>
+                        <div class="spec">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 9C3 7.93913 3.42143 6.92172 4.17157 6.17157C4.92172 5.42143 5.93913 5 7 5H17C18.0609 5 19.0783 5.42143 19.8284 6.17157C20.5786 6.92172 21 7.93913 21 9V15C21 16.0609 20.5786 17.0783 19.8284 17.8284C19.0783 18.5786 18.0609 19 17 19H7C5.93913 19 4.92172 18.5786 4.17157 17.8284C3.42143 17.0783 3 16.0609 3 15V9Z" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3 9H21" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 19V9" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 5V3" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15 5V3" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15 19V9" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>2 KM</span>
+                        </div>
+                    </div>
+                    <p class="house-description">Desain modern minimalis dengan ruang terbuka yang luas, cocok untuk keluarga muda yang menginginkan kenyamanan dan kemudahan akses.</p>
+                    <div class="house-price-container">
+                        <span class="house-price">Rp. 1.2 M</span>
+                        <a href="#" class="house-detail-btn">Lihat Detail</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tipe Rumah 2 -->
+            <div class="house-type-card">
+                <div class="house-image-container">
+                    <img src="img/rumah2-desktop.webp" alt="Tipe Rumah Orchid" class="house-image">
+                    <div class="house-badge">Premium</div>
+                </div>
+                <div class="house-info">
+                    <h3 class="house-name">Tipe Orchid</h3>
+                    <div class="house-specs">
+                        <div class="spec">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 22V12H15V22" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>150 m²</span>
+                        </div>
+                        <div class="spec">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 22V8L12 2L21 8V22" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 14H15" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 18H15" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>2 Lantai</span>
+                        </div>
+                        <div class="spec">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V21" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 21H18" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 13H18" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 13V21" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 8C12.8284 8 13.5 7.32843 13.5 6.5C13.5 5.67157 12.8284 5 12 5C11.1716 5 10.5 5.67157 10.5 6.5C10.5 7.32843 11.1716 8 12 8Z" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>4 KT</span>
+                        </div>
+                        <div class="spec">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 9C3 7.93913 3.42143 6.92172 4.17157 6.17157C4.92172 5.42143 5.93913 5 7 5H17C18.0609 5 19.0783 5.42143 19.8284 6.17157C20.5786 6.92172 21 7.93913 21 9V15C21 16.0609 20.5786 17.0783 19.8284 17.8284C19.0783 18.5786 18.0609 19 17 19H7C5.93913 19 4.92172 18.5786 4.17157 17.8284C3.42143 17.0783 3 16.0609 3 15V9Z" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3 9H21" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 19V9" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 5V3" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15 5V3" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15 19V9" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>3 KM</span>
+                        </div>
+                    </div>
+                    <p class="house-description">Rumah premium dengan desain elegan dan detail mewah, dilengkapi dengan taman pribadi yang asri dan area entertainment khusus.</p>
+                    <div class="house-price-container">
+                        <span class="house-price">Rp. 1.8 M</span>
+                        <a href="#" class="house-detail-btn">Lihat Detail</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tipe Rumah 3 -->
+            <div class="house-type-card">
+                <div class="house-image-container">
+                    <img src="img/rumah3-desktop.webp" alt="Tipe Rumah Jasmine" class="house-image">
+                    <div class="house-badge">New</div>
+                </div>
+                <div class="house-info">
+                    <h3 class="house-name">Tipe Jasmine</h3>
+                    <div class="house-specs">
+                        <div class="spec">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 22V12H15V22" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>180 m²</span>
+                        </div>
+                        <div class="spec">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 22V8L12 2L21 8V22" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 14H15" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 18H15" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>2 Lantai</span>
+                        </div>
+                        <div class="spec">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V21" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 21H18" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 13H18" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 13V21" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 8C12.8284 8 13.5 7.32843 13.5 6.5C13.5 5.67157 12.8284 5 12 5C11.1716 5 10.5 5.67157 10.5 6.5C10.5 7.32843 11.1716 8 12 8Z" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>4 KT</span>
+                        </div>
+                        <div class="spec">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 9C3 7.93913 3.42143 6.92172 4.17157 6.17157C4.92172 5.42143 5.93913 5 7 5H17C18.0609 5 19.0783 5.42143 19.8284 6.17157C20.5786 6.92172 21 7.93913 21 9V15C21 16.0609 20.5786 17.0783 19.8284 17.8284C19.0783 18.5786 18.0609 19 17 19H7C5.93913 19 4.92172 18.5786 4.17157 17.8284C3.42143 17.0783 3 16.0609 3 15V9Z" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3 9H21" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 19V9" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 5V3" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15 5V3" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15 19V9" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>3 KM</span>
+                        </div>
+                    </div>
+                    <p class="house-description">Hunian modern dengan arsitektur kontemporer, dilengkapi smart home system dan fitur hemat energi untuk kenyamanan maksimal.</p>
+                    <div class="house-price-container">
+                        <span class="house-price">Rp. 2.2 M</span>
+                        <a href="#" class="house-detail-btn">Lihat Detail</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tipe Rumah 4 -->
+            <div class="house-type-card">
+                <div class="house-image-container">
+                    <img src="img/rumah4-desktop.webp" alt="Tipe Rumah Magnolia" class="house-image">
+                    <div class="house-badge">Limited</div>
+                </div>
+                <div class="house-info">
+                    <h3 class="house-name">Tipe Magnolia</h3>
+                    <div class="house-specs">
+                        <div class="spec">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 22V12H15V22" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>220 m²</span>
+                        </div>
+                        <div class="spec">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 22V8L12 2L21 8V22" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 14H15" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 18H15" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>3 Lantai</span>
+                        </div>
+                        <div class="spec">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V21" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 21H18" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 13H18" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 13V21" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 8C12.8284 8 13.5 7.32843 13.5 6.5C13.5 5.67157 12.8284 5 12 5C11.1716 5 10.5 5.67157 10.5 6.5C10.5 7.32843 11.1716 8 12 8Z" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>5 KT</span>
+                        </div>
+                        <div class="spec">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 9C3 7.93913 3.42143 6.92172 4.17157 6.17157C4.92172 5.42143 5.93913 5 7 5H17C18.0609 5 19.0783 5.42143 19.8284 6.17157C20.5786 6.92172 21 7.93913 21 9V15C21 16.0609 20.5786 17.0783 19.8284 17.8284C19.0783 18.5786 18.0609 19 17 19H7C5.93913 19 4.92172 18.5786 4.17157 17.8284C3.42143 17.0783 3 16.0609 3 15V9Z" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3 9H21" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 19V9" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 5V3" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15 5V3" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15 19V9" stroke="#292357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>4 KM</span>
+                        </div>
+                    </div>
+                    <p class="house-description">Hunian mewah dengan desain eksklusif, fitur premium, dan area luas. Dilengkapi private pool dan ruang home theater untuk gaya hidup istimewa.</p>
+                    <div class="house-price-container">
+                        <span class="house-price">Rp. 3.5 M</span>
+                        <a href="#" class="house-detail-btn">Lihat Detail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Navigation Buttons -->
+        <div class="house-types-navigation">
+            <button class="nav-btn prev-btn" aria-label="Previous">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <div class="house-types-dots">
+                <span class="house-dot active" data-index="0"></span>
+                <span class="house-dot" data-index="1"></span>
+                <span class="house-dot" data-index="2"></span>
+                <span class="house-dot" data-index="3"></span>
+            </div>
+            <button class="nav-btn next-btn" aria-label="Next">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</section>
+<!-- Section Tipe Rumah End -->
+
+<!-- Section Galeri Start -->
+<section class="gallery-section" id="galeri">
+    <div class="section-header">
+        <span class="section-badge">GALERI</span>
+        <h2 class="section-title">Lihat Keindahan Garden House Serpong</h2>
+        <p class="section-subtitle">Jelajahi koleksi foto-foto eksklusif yang menampilkan keindahan desain, arsitektur, dan fasilitas hunian kami.</p>
+    </div>
+
+    <div class="gallery-container">
+        <div class="gallery-slider">
+            <!-- Gallery Item 1 -->
+            <div class="gallery-item">
+                <a href="img/rumah1-desktop.webp" 
+                   data-fancybox="gallery" 
+                   data-caption="Eksterior Rumah Tipe Lotus - Desain fasad modern dengan sentuhan elegansi">
+                    <img src="img/rumah1-desktop.webp" alt="Eksterior Rumah Garden House" class="gallery-image">
+                    <div class="gallery-caption">
+                        <h3>Eksterior Rumah Tipe Lotus</h3>
+                        <p>Desain fasad modern dengan sentuhan elegansi</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Gallery Item 2 -->
+            <div class="gallery-item">
+                <a href="img/rumah2-desktop.webp" 
+                   data-fancybox="gallery" 
+                   data-caption="Interior Ruang Keluarga - Ruang keluarga yang luas dan nyaman">
+                    <img src="img/rumah2-desktop.webp" alt="Interior Ruang Keluarga" class="gallery-image">
+                    <div class="gallery-caption">
+                        <h3>Interior Ruang Keluarga</h3>
+                        <p>Ruang keluarga yang luas dan nyaman</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Gallery Item 3 -->
+            <div class="gallery-item">
+                <a href="img/rumah3-desktop.webp" 
+                   data-fancybox="gallery" 
+                   data-caption="Taman Belakang - Area outdoor yang asri untuk bersantai">
+                    <img src="img/rumah3-desktop.webp" alt="Taman Belakang" class="gallery-image">
+                    <div class="gallery-caption">
+                        <h3>Taman Belakang</h3>
+                        <p>Area outdoor yang asri untuk bersantai</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Gallery Item 4 -->
+            <div class="gallery-item">
+                <a href="img/rumah4-desktop.webp" 
+                   data-fancybox="gallery" 
+                   data-caption="Fasilitas Kolam Renang - Kolam renang dengan desain modern yang menyegarkan">
+                    <img src="img/rumah4-desktop.webp" alt="Fasilitas Kolam Renang" class="gallery-image">
+                    <div class="gallery-caption">
+                        <h3>Fasilitas Kolam Renang</h3>
+                        <p>Kolam renang dengan desain modern yang menyegarkan</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Gallery Item 5 -->
+            <div class="gallery-item">
+                <a href="img/gerbang-desktop.webp" 
+                   data-fancybox="gallery" 
+                   data-caption="Gerbang Utama - Pintu masuk yang aman dan mewah">
+                    <img src="img/gerbang-desktop.webp" alt="Gerbang Utama" class="gallery-image">
+                    <div class="gallery-caption">
+                        <h3>Gerbang Utama</h3>
+                        <p>Pintu masuk yang aman dan mewah</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Gallery Item 6 -->
+            <div class="gallery-item">
+                <a href="img/taman-desktop.webp" 
+                   data-fancybox="gallery" 
+                   data-caption="Taman Komunal - Area hijau untuk bersosialisasi dan bersantai">
+                    <img src="img/taman-desktop.webp" alt="Taman Komunal" class="gallery-image">
+                    <div class="gallery-caption">
+                        <h3>Taman Komunal</h3>
+                        <p>Area hijau untuk bersosialisasi dan bersantai</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Gallery Navigation -->
+        <div class="gallery-navigation">
+            <button class="gallery-nav-btn prev-gallery" aria-label="Previous">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <div class="gallery-dots"></div>
+            <button class="gallery-nav-btn next-gallery" aria-label="Next">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</section>
+<!-- Section Galeri End -->
+
+<!-- Section Hubungi Kami Start -->
+<section class="contact-section" id="kontak">
+    <div class="section-header">
+        <span class="section-badge">HUBUNGI KAMI</span>
+        <h2 class="section-title">Konsultasikan Kebutuhan Hunian Anda</h2>
+        <p class="section-subtitle">Hubungi kami untuk mendapatkan informasi lebih lanjut tentang Garden House Serpong</p>
+    </div>
+
+    <div class="contact-container">
+        <!-- Bagian Foto dan Deskripsi (Kiri) -->
+        <div class="profile-container">
+            <div class="profile-image">
+                <img src="img/foto-profil.jpg" alt="Marketing Garden House Serpong">
+            </div>
+            <div class="profile-info">
+                <h3 class="profile-name">Endang Aprianto</h3>
+                <p class="profile-title">Senior Marketing Consultant</p>
+                <p class="profile-description">
+                    Saya siap membantu Anda menemukan hunian yang sesuai dengan kebutuhan dan budget. 
+                    Dengan pengalaman lebih dari 5 tahun di bidang properti, saya akan memastikan Anda 
+                    mendapatkan pilihan terbaik di Garden House Serpong.
+                </p>
+            </div>
+        </div>
+        
+        <!-- Bagian Informasi Kontak (Kanan) -->
+        <div class="contact-info-container">
+            <div class="contact-item">
+                <div class="contact-icon whatsapp-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 0C5.373 0 0 5.373 0 12C0 14.251 0.646 16.345 1.75 18.145L0.05 24L6.072 22.342C7.82 23.335 9.839 23.9 12 23.9C18.627 23.9 24 18.526 24 11.9C24 5.274 18.627 0 12 0ZM18.891 16.85C18.58 17.687 17.33 18.387 16.359 18.591C15.696 18.727 14.82 18.835 12.096 17.723C8.621 16.325 6.362 12.782 6.2 12.575C6.049 12.369 4.85 10.775 4.85 9.125C4.85 7.475 5.686 6.673 6.04 6.309C6.329 6.01 6.778 5.875 7.209 5.875C7.334 5.875 7.446 5.882 7.546 5.888C7.9 5.902 8.077 5.923 8.312 6.452C8.6 7.111 9.264 8.761 9.339 8.919C9.415 9.076 9.49 9.291 9.384 9.498C9.286 9.712 9.199 9.806 9.042 9.987C8.885 10.168 8.736 10.309 8.579 10.5C8.435 10.664 8.279 10.841 8.459 11.155C8.639 11.462 9.264 12.463 10.166 13.263C11.343 14.304 12.281 14.641 12.625 14.786C12.883 14.894 13.188 14.87 13.376 14.644C13.612 14.354 13.904 13.874 14.199 13.399C14.409 13.055 14.68 13.01 14.963 13.118C15.252 13.219 16.895 14.032 17.207 14.19C17.519 14.346 17.723 14.423 17.798 14.558C17.874 14.692 17.874 15.332 17.562 16.169L18.891 16.85Z" fill="#192841"/>
+                    </svg>
+                </div>
+                <div class="contact-detail">
+                    <h4>WhatsApp</h4>
+                    <p>+62 856-0108-1492</p>
+                    <a href="https://wa.me/6285601081492" class="contact-link" target="_blank">Hubungi via WhatsApp</a>
+                </div>
+            </div>
+            
+            <div class="contact-item">
+                <div class="contact-icon phone-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.3327 21C9.55365 21 2.33301 13.7794 2.33301 5.00031C2.33348 4.20439 2.65518 3.44083 3.22235 2.87366C3.78952 2.30649 4.55307 1.98479 5.34899 1.98431H8.17745C8.40746 1.98361 8.63256 2.0549 8.82057 2.18857C9.00858 2.32225 9.15074 2.51214 9.22899 2.73097L10.4957 6.00639C10.5712 6.21596 10.5822 6.44301 10.5275 6.6591C10.4728 6.87519 10.3546 7.06991 10.1885 7.2197L8.36366 8.86905C9.29319 10.8789 10.9516 12.5374 12.9615 13.4669L14.6108 11.6421C14.7606 11.4759 14.9553 11.3577 15.1714 11.303C15.3875 11.2483 15.6146 11.2593 15.8241 11.3349L19.0996 12.6016C19.3184 12.6799 19.5083 12.822 19.6419 13.01C19.7756 13.198 19.8469 13.4231 19.8462 13.6531V16.4815C19.8457 17.2775 19.524 18.041 18.9568 18.6082C18.3896 19.1754 17.6261 19.497 16.8301 19.4975C16.6643 19.4975 16.4993 19.4975 16.3327 19.4975" stroke="#192841" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="contact-detail">
+                    <h4>Telepon</h4>
+                    <p>+62 21 5589 7123</p>
+                    <a href="tel:+622155897123" class="contact-link" target="_blank">Hubungi via Telepon</a>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon instagram-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2.163C15.204 2.163 15.584 2.175 16.85 2.233C20.102 2.381 21.621 3.924 21.769 7.152C21.827 8.417 21.838 8.797 21.838 12.001C21.838 15.206 21.826 15.585 21.769 16.85C21.62 20.075 20.105 21.621 16.85 21.769C15.584 21.827 15.206 21.839 12 21.839C8.796 21.839 8.416 21.827 7.151 21.769C3.891 21.62 2.38 20.07 2.232 16.849C2.174 15.584 2.162 15.205 2.162 12C2.162 8.796 2.175 8.417 2.232 7.151C2.381 3.924 3.896 2.38 7.151 2.232C8.417 2.175 8.796 2.163 12 2.163ZM12 0C8.741 0 8.333 0.014 7.053 0.072C2.695 0.272 0.273 2.69 0.073 7.052C0.014 8.333 0 8.741 0 12C0 15.259 0.014 15.668 0.072 16.948C0.272 21.306 2.69 23.728 7.052 23.928C8.333 23.986 8.741 24 12 24C15.259 24 15.668 23.986 16.948 23.928C21.302 23.728 23.73 21.31 23.927 16.948C23.986 15.668 24 15.259 24 12C24 8.741 23.986 8.333 23.928 7.053C23.732 2.699 21.311 0.273 16.949 0.073C15.668 0.014 15.259 0 12 0ZM12 5.838C8.597 5.838 5.838 8.597 5.838 12C5.838 15.403 8.597 18.163 12 18.163C15.403 18.163 18.162 15.404 18.162 12C18.162 8.597 15.403 5.838 12 5.838ZM12 16C9.791 16 8 14.21 8 12C8 9.791 9.791 8 12 8C14.209 8 16 9.791 16 12C16 14.21 14.209 16 12 16ZM18.406 4.155C17.61 4.155 16.965 4.8 16.965 5.595C16.965 6.39 17.61 7.035 18.406 7.035C19.201 7.035 19.845 6.39 19.845 5.595C19.845 4.8 19.201 4.155 18.406 4.155Z" fill="#192841"/>
+                    </svg>
+                </div>
+                <div class="contact-detail">
+                    <h4>Instagram</h4>
+                    <p>@gardenhouseserpong</p>
+                    <a href="https://instagram.com/gardenhouseserpong" class="contact-link" target="_blank">Ikuti kami di Instagram</a>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon location-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="#192841" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#192841" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="contact-detail">
+                    <h4>Alamat</h4>
+                    <p>Jl. Raya Serpong No.123<br>Tangerang Selatan, Banten 15310</p>
+                    <a href="https://maps.app.goo.gl/vZVdP74QcTYzypjo7" class="contact-link" target="_blank">Lihat di Google Maps</a>
+                </div>
+            </div>
+
+            <div class="brochure-container">
+                <a href="https://wa.me/6285601081492?text=Halo,%20saya%20tertarik%20dengan%20Garden%20House%20Serpong.%20Mohon%20kirimkan%20brosur%20terbaru.%20Terima%20kasih." class="brochure-btn" target="_blank">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7 10L12 15L17 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 15V3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Dapatkan Brosur Sekarang
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Section Hubungi Kami End -->
+
+<!-- Section Google Maps Start -->
+<!-- Section Google Maps Sederhana (Tanpa Popup) -->
+<section class="maps-section">
+    <div class="section-header">
+        <span class="section-badge">LOKASI KAMI</span>
+        <h2 class="section-title">Temukan Lokasi Garden House Serpong</h2>
+        <p class="section-subtitle">Kunjungi lokasi kami untuk melihat langsung keindahan dan kenyamanan hunian yang kami tawarkan</p>
+    </div>
+
+    <div class="maps-container">
+        <!-- Google Maps Embed -->
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.732646104936!2d106.6715573!3d-6.3794646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e5deb39fba3b%3A0x58f9886e59290bf!2sGarden%20House%20Serpong!5e0!3m2!1sid!2sid!4v1741447683196!5m2!1sid!2sid" 
+            width="100%" 
+            height="500" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</section>
+<!-- Section Google Maps End -->
+
+<!-- Footer Section Start -->
+<footer class="footer-section">
+    <div class="ft-container">
+        <!-- Logo & About -->
+        <div class="ft-brand">
+            <div class="ft-logo">
+                <img src="img/logo-gsh.png" alt="Garden House Serpong Logo">
+                <span>Garden House Serpong</span>
+            </div>
+            <p class="ft-description">
+                Hunian modern dengan arsitektur kontemporer, dilengkapi smart home system dan fasilitas lengkap untuk kenyamanan maksimal. Berlokasi strategis di pusat kota.
+            </p>
+            <div class="ft-social">
+                <a href="https://whatsapp.com" class="ft-social-icon" aria-label="WhatsApp">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.4054 3.5947C18.1607 1.35 15.1714 0.0947 12.0054 0.0947C5.4375 0.0947 0.0964 5.43582 0.0964 12.0037C0.0964 14.1375 0.6911 16.2144 1.8161 18.0054L0 24.0947L6.2196 22.3108C7.9446 23.3197 9.95357 23.8537 12.0054 23.8537H12.0054C18.5732 23.8537 24 18.5126 24 11.9447C24 8.77875 22.65 5.83945 20.4054 3.5947ZM12.0054 21.8572C10.2268 21.8572 8.4857 21.3465 6.9804 20.3947L6.6161 20.1715L2.8607 21.1983L3.9054 17.5322L3.6643 17.1501C2.6036 15.5876 2.0357 13.8269 2.0357 12.0037C2.0357 6.5358 6.5375 2.03397 12.0054 2.03397C14.6446 2.03397 17.1322 3.10612 19.0179 4.99182C20.9036 6.87752 22 9.36517 22 12.0044C22 17.4722 17.4732 21.8572 12.0054 21.8572ZM17.4554 14.5197C17.1643 14.3733 15.6946 13.6483 15.4214 13.5608C15.1482 13.4733 14.9429 13.4197 14.7375 13.7108C14.5322 14.0019 13.9643 14.6679 13.7768 14.8733C13.5893 15.0786 13.4018 15.1054 13.1107 14.959C12.8196 14.8126 11.85 14.484 10.7036 13.4733C9.8036 12.684 9.2 11.7144 9.0125 11.4233C8.825 11.1322 8.9929 10.959 9.1536 10.7983C9.3 10.6518 9.4786 10.4126 9.6393 10.2251C9.8 10.0376 9.8536 9.89397 9.9411 9.68862C10.0286 9.48327 9.975 9.29577 9.9143 9.14934C9.8536 9.0029 9.2536 7.53327 8.9893 6.95112C8.7357 6.39325 8.4751 6.47576 8.2771 6.47576C8.0893 6.47576 7.8839 6.45004 7.6786 6.45004C7.4732 6.45004 7.1464 6.51075 6.8732 6.80182C6.6 7.09289 5.8214 7.81787 5.8214 9.2875C5.8214 10.7572 6.8732 12.168 7.0339 12.3733C7.1946 12.5786 9.175 15.634 12.2107 16.9036C12.8554 17.1768 13.3571 17.3375 13.75 17.4608C14.4054 17.6572 15 17.6304 15.4679 17.5697C15.9893 17.5019 17.1821 16.8572 17.4464 16.1858C17.7107 15.5144 17.7107 14.9322 17.65 14.8215C17.5893 14.7108 17.384 14.6501 17.0929 14.5037L17.4554 14.5197Z" fill="white"/>
+                    </svg>
+                </a>
+                <a href="https://instagram.com" class="ft-social-icon" aria-label="Instagram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2.163C15.204 2.163 15.584 2.175 16.85 2.233C20.102 2.381 21.621 3.924 21.769 7.152C21.827 8.417 21.838 8.797 21.838 12.001C21.838 15.206 21.826 15.585 21.769 16.85C21.62 20.075 20.105 21.621 16.85 21.769C15.584 21.827 15.206 21.839 12 21.839C8.796 21.839 8.416 21.827 7.151 21.769C3.891 21.62 2.38 20.07 2.232 16.849C2.174 15.584 2.162 15.205 2.162 12C2.162 8.796 2.175 8.417 2.232 7.151C2.381 3.924 3.896 2.38 7.151 2.232C8.417 2.175 8.796 2.163 12 2.163ZM12 0C8.741 0 8.333 0.014 7.053 0.072C2.695 0.272 0.273 2.69 0.073 7.052C0.014 8.333 0 8.741 0 12C0 15.259 0.014 15.668 0.072 16.948C0.272 21.306 2.69 23.728 7.052 23.928C8.333 23.986 8.741 24 12 24C15.259 24 15.668 23.986 16.948 23.928C21.302 23.728 23.73 21.31 23.927 16.948C23.986 15.668 24 15.259 24 12C24 8.741 23.986 8.333 23.928 7.053C23.732 2.699 21.311 0.273 16.949 0.073C15.668 0.014 15.259 0 12 0ZM12 5.838C8.597 5.838 5.838 8.597 5.838 12C5.838 15.403 8.597 18.163 12 18.163C15.403 18.163 18.162 15.404 18.162 12C18.162 8.597 15.403 5.838 12 5.838ZM12 16C9.791 16 8 14.21 8 12C8 9.791 9.791 8 12 8C14.209 8 16 9.791 16 12C16 14.21 14.209 16 12 16ZM18.406 4.155C17.61 4.155 16.965 4.8 16.965 5.595C16.965 6.39 17.61 7.035 18.406 7.035C19.201 7.035 19.845 6.39 19.845 5.595C19.845 4.8 19.201 4.155 18.406 4.155Z" fill="white"/>
+                    </svg>
+                </a>
+                <a href="https://facebook.com" class="ft-social-icon" aria-label="Facebook">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 17.9895 4.3882 22.954 10.125 23.8542V15.4688H7.07812V12H10.125V9.35625C10.125 6.34875 11.9166 4.6875 14.6576 4.6875C15.9701 4.6875 17.3438 4.92188 17.3438 4.92188V7.875H15.8306C14.34 7.875 13.875 8.80008 13.875 9.75V12H17.2031L16.6711 15.4688H13.875V23.8542C19.6118 22.954 24 17.9895 24 12Z" fill="white"/>
+                    </svg>
+                </a>
+                <a href="https://youtube.com" class="ft-social-icon" aria-label="YouTube">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M23.5 6.50701C23.3641 6.02225 23.0994 5.58336 22.734 5.23671C22.3583 4.88405 21.8978 4.63436 21.396 4.51401C19.518 4.01401 12 4.01401 12 4.01401C12 4.01401 4.48201 4.01401 2.60401 4.51401C2.10167 4.63436 1.64126 4.88405 1.26601 5.23671C0.900629 5.58336 0.635883 6.02225 0.500005 6.50701C0.0110073 10.184 -0.232493 13.909 0.282005 17.584C0.417883 18.0688 0.682629 18.5076 1.04801 18.8543C1.43301 19.207 1.89301 19.457 2.39501 19.577C4.27301 20.077 12 20.077 12 20.077C12 20.077 19.518 20.077 21.396 19.577C21.8978 19.4566 22.3583 19.207 22.734 18.8543C23.0994 18.5076 23.3641 18.0688 23.5 17.584C23.9914 13.9069 24.2349 10.1817 23.72 6.50701H23.5Z" fill="white"/>
+                        <path d="M9.54501 15.569L15.818 12.046L9.54501 8.52301V15.569Z" fill="#292357"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div class="ft-links">
+            <h3 class="ft-title">Tautan Cepat</h3>
+            <ul class="ft-nav">
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#tipe-rumah">Tipe Rumah</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+                <li><a href="#kontak">Hubungi Kami</a></li>
+                <li><a href="#">Simulasi KPR</a></li>
+                <li><a href="#">Tentang Kami</a></li>
+            </ul>
+        </div>
+        
+        <!-- Contact Info -->
+        <div class="ft-contact">
+            <h3 class="ft-title">Informasi Kontak</h3>
+            <div class="ft-contact-item">
+                <div class="ft-contact-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <p>Jl. Raya Serpong No.123, Tangerang Selatan, Banten 15310</p>
+            </div>
+            <div class="ft-contact-item">
+                <div class="ft-contact-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.3327 21C9.55365 21 2.33301 13.7794 2.33301 5.00031C2.33348 4.20439 2.65518 3.44083 3.22235 2.87366C3.78952 2.30649 4.55307 1.98479 5.34899 1.98431H8.17745C8.40746 1.98361 8.63256 2.0549 8.82057 2.18857C9.00858 2.32225 9.15074 2.51214 9.22899 2.73097L10.4957 6.00639C10.5712 6.21596 10.5822 6.44301 10.5275 6.6591C10.4728 6.87519 10.3546 7.06991 10.1885 7.2197L8.36366 8.86905C9.29319 10.8789 10.9516 12.5374 12.9615 13.4669L14.6108 11.6421C14.7606 11.4759 14.9553 11.3577 15.1714 11.303C15.3875 11.2483 15.6146 11.2593 15.8241 11.3349L19.0996 12.6016C19.3184 12.6799 19.5083 12.822 19.6419 13.01C19.7756 13.198 19.8469 13.4231 19.8462 13.6531V16.4815C19.8457 17.2775 19.524 18.041 18.9568 18.6082C18.3896 19.1754 17.6261 19.497 16.8301 19.4975C16.6643 19.4975 16.4993 19.4975 16.3327 19.4975" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <p>+62 21 5589 7123</p>
+            </div>
+            <div class="ft-contact-item">
+                <div class="ft-contact-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M22 6L12 13L2 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <p>info@gardenhouseserpong.com</p>
+            </div>
+            <div class="ft-contact-item">
+                <div class="ft-contact-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 6V12L16 14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <p>Senin - Jumat: 09:00 - 17:00<br>Sabtu: 09:00 - 15:00</p>
+            </div>
+        </div>
+        
+        <!-- Newsletter -->
+        <div class="ft-newsletter">
+            <h3 class="ft-title">Berlangganan Info</h3>
+            <p class="ft-newsletter-desc">Dapatkan informasi terbaru tentang hunian, promo, dan tips seputar properti.</p>
+            <form class="ft-newsletter-form" id="newsletterForm">
+                <div class="ft-form-group">
+                    <input type="email" id="emailNewsletter" placeholder="Masukkan Email Anda" required>
+                    <button type="submit" class="ft-newsletter-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 2L11 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Footer Bottom -->
+    <div class="ft-bottom">
+        <div class="ft-container">
+            <p class="ft-copyright">© 2025 Garden House Serpong. All Rights Reserved.</p>
+            <div class="ft-links-bottom">
+                <a href="#">Syarat & Ketentuan</a>
+                <a href="#">Kebijakan Privasi</a>
+                <a href="#">Disclaimer</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to Top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 15L12 9L6 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+</footer>
+<!-- Footer Section End -->
+ 
+    <script src="script.js"></script>
+    <!-- Fancybox JS -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+</body>
+</html>
